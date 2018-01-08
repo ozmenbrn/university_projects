@@ -1,0 +1,15 @@
+A: prog1.py hello
+B: prog1.py world
+C: prog2.py 23 45
+D: prog3.py
+E: prog4.py a b c
+F: prog1.py istanbul
+G: prog5.py
+%%
+A => D
+B => D
+D => F
+B => E
+C => E
+C => G
+E => G

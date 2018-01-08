@@ -1,0 +1,15 @@
+I have done the first part of the project. But i couldn't able to write makeFile for java.
+I tried to copy and arrange what you did on java Makefile but i couldn't run from the terminal as you said. 
+But you can run the program from terminal typing "java ADVCALC". Thank you for understanding.
+ 
+
+
+In this project we were suppose to write an interpreter and i started to do it with infix to postfix and with one method which 
+return the result by getting the postfix. 
+In main method, take the input, if it has equal sign create a varible and equal 
+it with the result come from the method. If no equal sing just print the variable.
+
+
+
+Barýn ÖZMEN
+2012400045
