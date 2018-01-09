@@ -44,7 +44,7 @@ Projects i have made so far in university. Mostly, programming languages that i 
 <br>
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe300_Analysis_of_Algorithms"> CmpE300 - Analysis of Algorithms </a></h3>
-<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe300_Analysis_of_Algorithms/applicationProject"> Application Project</a> - C++ / MPI </li>
+<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe300_Analysis_of_Algorithms/applicationProject"> Application Project</a> - C / MPI </li>
 <br>
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe321_Introduction_to_Database_Systems"> Cmpe321 - Introduction to Database Systems </a></h3>
