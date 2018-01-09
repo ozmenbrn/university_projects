@@ -1,0 +1,5 @@
+	Project is implemented in c++ language and take 1 parameter while running executable file. 
+	After compiled with "g++ main.cpp" commend simply "./a.out <file_name>" runs the program and creates output file named output.txt,
+	 output_10.txt and output_11.txt if printers are used and output_12.txt if hard drive is used. 
+	For the detailed explanation about project, please look at code's comments.
+	Code runs with no error and gives the expected output.

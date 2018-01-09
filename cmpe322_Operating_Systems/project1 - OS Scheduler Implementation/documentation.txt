@@ -1,0 +1,4 @@
+Project is implemented in c++ language and takes 1 parameter while running executable file. 
+After compiled with "g++ main.cpp" commend simply "./a.out <file_name>" runs the program and creates output file named output.txt
+Takes argument file as parameter when program is executed. 
+For the detailed explanation about project, please look at code's comments.
