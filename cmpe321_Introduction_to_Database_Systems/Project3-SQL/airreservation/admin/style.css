@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+h1 {
+	text-align:center;
+	color: #983A00;
+}
+body {
+	background-color: #8D8888;
+	background-image: url("/airreservation/img/IMG_216114.jpg");
+	width:975px;
+	margin:0px 270px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 644px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+#user {
+	text-align:right;
+}
+

@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+h1 {
+	text-align:center;
+	color: #983A00;
+}
+body {
+	background-color: #8D8888;
+	background-image: url("img/IMG_216114.jpg");
+	width:975px;
+	margin:0px 270px;
+}
+
+#user {
+	text-align:right;
+}
+
