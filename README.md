@@ -2,8 +2,21 @@
 Projects i have made so far in university. Mostly, programming languages that i have written.
 <br>
 
-
+<br>
 <h3><a href = "https://github.com/bounswe/bounswe2017group11"> CmpE352 & CmpE451 - Project Development in Software Engineering </a><h3>
+<br>
+
+<h3><a href = "https://github.com/ozmenbrn/university_projects/blob/master/CmpE483_Blockchain_Programming"> CmpE483 - Blockchain Programming </a></h3>
+<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE483_Blockchain_Programming/project1"> Project1 </a> - Solidity/Smart Contract </li>
+<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE483_Blockchain_Programming/project2"> Project2 </a> - Solidity/Smart Contract - Web </li>
+<br>
+
+
+<h3><a href = "https://github.com/ozmenbrn/university_projects/blob/master/CmpE493_Intro_Information_Retrival"> CmpE493 - Information Retrival </a></h3>
+<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE493_Intro_Information_Retrival/project1"> Project1 </a> - Python </li>
+<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE493_Intro_Information_Retrival/project2"> Project2 </a> - Python </li>
+<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE493_Intro_Information_Retrival/project3"> Project3 </a> - Python </li>
+<br>
 
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe300_Analysis_of_Algorithms"> CmpE300 - Analysis of Algorithms </a></h3>
@@ -24,11 +37,12 @@ Projects i have made so far in university. Mostly, programming languages that i 
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe321_Introduction_to_Database_Systems/Project3-SQL"> Project3</a> - Php / Html / JavaScript / Css </li>
 <br>
 
+
 <h3><a href = "https://github.com/ozmenbrn/university_projects/blob/master/CmpE362_Intro_to_Signal_Proc_for_Computer_Engineering"> CmpE362 - Signal Processing </a></h3>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE362_Intro_to_Signal_Proc_for_Computer_Engineering/project1"> Project1 </a> - Matlab </li>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE362_Intro_to_Signal_Proc_for_Computer_Engineering/project2"> Project2 </a> - Matlab </li>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE362_Intro_to_Signal_Proc_for_Computer_Engineering/project3"> Project3 </a> - Matlab </li>
-
+<br>
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe260_ConceptsOfProgramming%20Languages"> Cmpe260 - Principles Of Programming Languages </a></h3>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe260_ConceptsOfProgramming%20Languages/project1_prolog"> Project1</a> - Prolog </li>
@@ -72,4 +86,3 @@ Projects i have made so far in university. Mostly, programming languages that i 
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe150_JavaProgramming/project1"> Project1</a> - Java </li>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe150_JavaProgramming/project2"> Project2</a> - Java </li>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe150_JavaProgramming/project3"> Project3</a> - Java </li>
-<br>
