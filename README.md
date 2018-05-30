@@ -4,8 +4,9 @@ Projects i have made so far in university. Mostly, programming languages that i 
 
 <br>
 <h3><a href = "https://github.com/bounswe/bounswe2017group11"> CmpE352 & CmpE451 - Project Development in Software Engineering </a><h3>
-<br>
 <h3><a href = "https://github.com/bounIoT/SmartBulletinBoard"> CmpE490 - Internet of Things </a><h3>
+<br>
+
 <h3><a href = "https://github.com/ozmenbrn/university_projects/blob/master/CmpE483_Blockchain_Programming"> CmpE483 - Blockchain Programming </a></h3>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE483_Blockchain_Programming/project1"> Project1 </a> - Solidity/Smart Contract </li>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE483_Blockchain_Programming/project2"> Project2 </a> - Solidity/Smart Contract - Web </li>
