@@ -76,7 +76,6 @@ Projects i have made so far in university. Mostly, programming languages that i 
 
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe160_Java_ObjectOriented"> CmpE160 - Introduction to Object Oriented Programming </a></h3>
-<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe160_Java_ObjectOriented/SnakeGame"> Snake_Game</a> - Java </li>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe160_Java_ObjectOriented/TurtleGame"> Turtle_Game</a> - Java </li>
 <br>
 
