@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blockchain Based Student Academic Record Sharing System for Exchange  Students</title>
+
+  <script src="abi.js" type="text/javascript"></script> 
+  <link rel="stylesheet" type="text/css" href="css/background.css">
+  <link rel="stylesheet" type="text/css" href="css/register.css">
+  <script src="js/require.js" type="text/javascript"></script> 
+
+
+</head>
+
+<script type="text/javascript">
+
+  var addressSystem = "BULeR8JyUWhiuuCMU/HLA0Q5pzkYT+cHII3ZKBey3Bo=";
+  var addressBogazici = "QfeDAys9MPDs2XHExtc84jKGHxZg/aj52DTh0vtA3Xc=";
+  var addressHacettepe = "1iTZde/ndBHvzhcl7V68x44Vx7pl8nwx9LqnM/AfJUg=";
+  var addressItu = "oNspPPgszVUFw0qmGFfWwh1uxVUXgvBxleXORHj07g8=";
+  var addressOdtu = "R56gy4dn24YOjwyesTczYa8m5xhP6hF2uTMCju/1xkY=";
+  var addressKoc = "UfNSeSGySeKg11DVNEnqrUtxYRVor4+CvluI8tVv62Y="
+  var addressOsmangazi = "ROAZBWtSacxXQrOe3FGAqJDyJjFePR5ce4TSIzmJ0Bc=";
+
+  var studentsArray = ["0x627306090abab3a6e1400e9345bc60c78a8bef57", "0xf17f52151ebef6c7334fad080c5704d77216b732", "0xc5fdf4076b8f3a5357c5e395ab970b5b54098fef"
+ , "0x821aea9a577a9b44299b9c15c88cf3087f3b5544", "0x0d1d4e623d10f9fba5db95830f7d3839406c6af2", "0x2932b7a2355d6fecc4b5c0b6bd44cc31df247a2e"
+, "0x2191ef87e392377ec08e7c08eb105ef5448eced5", "0x0f4f2ac550a1b4e2280d04c21cea7ebd822934b5" ,"0x6330a553fc93768f612722bb8c2ec78ac90b3bbc","0x5aeda56215b167893e80b4fe645ba6d5bab767de", "0x5aeda562184167893e80b4fe645ba6d5bab767de", "0x5aeda562184167893e80b4fe645ba6dasdk967de", "0xgkrda562184167893e80b4fe645ba6dsjdk967de", "0xgekda562184167893e80b4fe645ba6dsjdk967de", "0x5aeda562184167893e80blsd645ba6dsjdk967de", "0x5aeda562oqw167893e80b4fe645ba6dsjdk967de" ,"0x5aeda562184167893e80b4fe6a5ba6dsjdk967de" ,"0x5aeda562184167893e80b4fe6r5ba6dsjdk967de" ,"0x5ae7a562184167893e80b4fe645ba6dsjdk967de" ,"0x5aeda562184127893e80b4fe645ba6dsjdk967de" ,"0x5aeda562184167893e80b4fe648ba6dsjdk967de" ,"0x5aeda562184167893e80b4we645ba6dsjdk967de" ,"0x5aeda562184167893e80b4fe645bajdsjdk967de" ,"0x5aeda56şf84167893e80b4fe645ba6dsjdk967de" ,"0x5aeda562184167893e80b4fe64fba6dsjdk967de" ,"0x5aeda562184167893e80h4fe645ba6dsjdk967de" ,"0x5aeda562184167893e80b4fe645ba6dsadk967de" ,"0x5aeda562184167893e80b4fe6j5ba6dsjdk967de" ,"0x5axda562184167893e80b4fe645ba6dsjdk967de" ,"0x5aeda562184167893e80b4fe645bazdsjdk967de", "0x5aeda562184167893e80b4ve645ba6dsjdk967de"];
+
+
+  var contract;
+  var contractaddress;
+  var web3js;
+  var web3jstx;
+  window.addEventListener('load', function() {
+    
+    var web3 = window.web3 ;
+    var httpString = "-1";
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get('username');
+
+    if(username == "admin"){
+      httpString = "http://localhost:22000";
+    }
+    else if(username == "bogazici"){
+      httpString = "http://localhost:22001";
+    }
+    else if(username == "hacettepe"){
+      httpString = "http://localhost:22002";
+    }
+    else if(username == "itu"){
+      httpString = "http://localhost:22003";
+    }
+    else if(username == "odtu"){
+      httpString = "http://localhost:22004";
+    }
+    else if(username == "koc"){
+      httpString = "http://localhost:22005";
+    }
+    else if(username == "osmangazi"){
+      httpString = "http://localhost:22006";
+    }
+
+    if (typeof web3 !== 'undefined') {
+    // Use Mist/MetaMask's provider
+      if(httpString == "-1"){
+        web3js = new Web3(new Web3.providers.HttpProvider("http://localhost:8081"));
+        web3jstx = new Web3(web3.currentProvider);
+        alert("Not Granted!");
+      }else{
+        web3js = new Web3(new Web3.providers.HttpProvider(httpString));
+        web3jstx = new Web3(web3.currentProvider);
+      }
+    } else {
+      console.log('No web3? You should consider trying MetaMask!')
+      // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
+      web3js = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+    }
+
+    contractaddress = "0x1932c48b2bf8102ba33b4a6b545c32236e342f34";
+    contract = web3js.eth.contract(abi).at(contractaddress);
+    contracttx =  web3jstx.eth.contract(abi).at(contractaddress);
+  });
+
+
+  function logout(){
+    window.location.replace("http://localhost:8081/");
+  }
+
+  function getaddrbalance() {
+    var adress = web3js.eth.accounts[0];
+
+    rc = web3js.eth.getBalance(adress ,function(error, result){
+      if(!error) {
+        var stat = JSON.stringify(result);
+        document.getElementById("balance").innerHTML = "Balance:" + stat ;
+      }
+      else {
+        console.error(error);
+      }
+    });
+  }
+  function getRegisteredStudents() {
+    var adress = web3js.eth.accounts[0];
+
+    contract.getRegisteredStudents( function(error, result){
+      if(!error) {
+        var stat = JSON.stringify(result);
+        alert(stat);
+      }
+      else {
+        console.error(error);
+      }
+    });
+  }
+  function getCoursesOfStudent(){
+    var studentName = document.getElementById("enteredStudentName").value ;
+
+
+    contract.getStudentAddress(studentName, function(error, result){
+      if(!error) {
+        contract.getCourses(result, function(error2, result2){
+        if(!error) {
+            var stat = JSON.stringify(result2);
+            alert(stat);
+          }
+          else {
+            console.error(error2);
+          }
+        });
+      }
+      else {
+        console.error(error);
+      }
+    });
+    
+  }
+
+  function registerStudent(){
+    var studentName = document.getElementById("registerStudent").value ;
+
+
+    contract.lengthRegisteredStudents(function(error, result){
+      console.log(web3js.eth.accounts[0]);
+      if(!error) {
+
+        contracttx.registerStudent(studentsArray[result], studentName, {from:web3jstx.eth.accounts[0], to: contractaddress, value:web3jstx.toWei(1,"finney"), gas:(5000000), privateFor: [addressBogazici]} ,function(error2, result2){
+          if(!error2) {
+            alert("Registered Sucessfully");
+          }
+          else {
+            console.error(error2);
+          }
+        });
+      }
+      else {
+        console.error(error);
+      }
+    });
+  }
+
+  function registerCourse(){
+    var studentName = document.getElementById("registerStudentName").value ;
+    var courseName = document.getElementById("registerCourseName").value ;
+
+    contract.getStudentAddress(studentName, function(error, result){
+      if(!error) {
+        contracttx.registerCourse(result, courseName, {from:web3jstx.eth.accounts[0], to: contractaddress, value:web3jstx.toWei(1,"finney"), gas:(5000000), privateFor: [addressBogazici]} ,function(error2, result2){
+          if(!error2) {
+            alert("Registered Sucessfully");
+          }
+          else {
+            console.error(error2);
+          }
+        });
+      }
+      else {
+        console.error(error);
+      }
+    });
+  }
+
+  function transferStudent(){
+    var studentName = document.getElementById("transferStudentName").value ;
+    var schoolName = document.getElementById("transferSchoolName").value ;
+    var courses = [];
+
+    contract.getStudentAddress(studentName, function(error, result){
+      if(!error) {
+        contracttx.transferStudent(studentName, result, {from:web3jstx.eth.accounts[0], to: contractaddress, value:web3jstx.toWei(1,"finney"), gas:(5000000), privateFor: [addressBogazici]} ,function(error5, result5){
+          if(!error5) {
+            alert("Started Transfering...");
+          }
+          else {
+            console.error(error5);
+          }
+        });
+        contract.returnLengthCourses(result ,function(error2, result2){
+          if(!error2) {
+            console.log(result2);
+            contract.getCourses(result, function(error4, result4){
+            if(!error4) {
+                courses = result4;
+                var i;
+                for(i = 1; i < courses.length; i++){
+                  console.log(courses[i]);
+                  console.log(result);
+                  contract.transferCourse(courses[i], result, {privateFor: [addressBogazici]} ,function(error3, result3){
+                    if(!error3) {
+                      alert("Transfer Completed");
+                    }
+                    else {
+                      console.error(error3);
+                    }
+                  });
+
+                }
+
+              }
+              else {
+                console.error(error4);
+              }
+            });
+
+          }
+          else {
+            console.error(error2);
+          }
+        });
+      }
+      else {
+        console.error(error);
+      }
+    });
+    
+  }
+
+   function runRegisterFunction(studentHash){
+    var artifacts = require(['./RegisterSystem.json'])
+    var RegisterSystem = artifacts.require(["./RegisterSystem.sol"]);
+
+    module.exports = function(done) {
+    console.log("Getting deployed version of RegisterSystem...")
+    RegisterSystem.deployed().then(function(instance) {
+      console.log("Registering the student");
+      return instance.registerStudent(studentHash, "Ayan Özmen", {privateFor: [addressBogazici]});
+          
+        }).then(function(result) {
+          console.log("Transaction:", result.tx);
+          console.log("Finished!");
+          done();
+        }).catch(function(e) {
+          console.log(e);
+          done();
+        }); 
+    };
+  }
+  
+</script>
+
+<body>
+
+  <h1 align="center">Blockchain Based Student Academic Record<br> Sharing System for Exchange Students</h1>
+
+  <div align="right">
+      <button onclick="logout()">Logout</button>
+  </div>
+
+  <button onclick="getaddrbalance()">Get Balance</button>
+
+  <p id="balance" style="display:inline"></p>
+
+  <br> 
+  <br>
+
+  <button onclick="getRegisteredStudents()">Get Registered Students</button>
+  
+  <br> 
+  <br>
+
+  <form style="display:inline">
+    <p style="display:inline"> Student Name: <textarea id="enteredStudentName" rows="1" cols="10"></textarea> </p>
+    <p style="display:inline"> >>> </p>
+  </form>
+
+  <button onclick="getCoursesOfStudent()">Get Courses</button>
+
+
+  <br> 
+  <br> 
+
+  <h2>Register Student to University</h2>
+
+  <form style="display:inline">
+    <p style="display:inline"> Student Name: <textarea id="registerStudent" rows="1" cols="10"></textarea> </p>
+    <p style="display:inline"> >>> </p>
+  </form>
+
+  <button onclick="registerStudent()">Register Student</button>
+
+  <br>
+  <br>
+  <h2>Register Student to Course</h2>
+
+  <form style="display:inline">
+    <p style="display:inline"> Student Name: <textarea id="registerStudentName" rows="1" cols="10"></textarea> </p>
+    <p style="display:inline"> &nbsp &nbsp</p>
+    <p style="display:inline"> Course Name: <textarea id="registerCourseName" rows="1" cols="10"></textarea> </p>
+    <p style="display:inline"> >>> </p>
+  </form>
+
+  <button onclick="registerCourse()">Register Course</button>
+
+  <br>
+  <br>
+  <h2>Transfer Student</h2>
+
+  <form style="display:inline">
+    <p style="display:inline"> Student Name: <textarea id="transferStudentName" rows="1" cols="10"></textarea> </p>
+    <p style="display:inline"> &nbsp &nbsp</p>
+    <p style="display:inline"> School Name: <textarea id="transferSchoolName" rows="1" cols="10"></textarea> </p>
+    <p style="display:inline"> >>> </p>
+  </form>
+
+  <button onclick="transferStudent()">Transfer Student</button>
+
+</body>
+</html>
