@@ -7,7 +7,8 @@ Projects i have made so far in university. Mostly, programming languages that i 
 <h3><a href = "https://github.com/bounIoT/SmartBulletinBoard"> CmpE490 - Internet of Things </a><h3>
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE492_SpecProjectInComputerEngineering"> CmpE492 - Spec. Project in Computer Engineering </a><h3>
-
+<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE492_SpecProjectInComputerEngineering/CmpE_492Project"> Blockchain Based Student Academic Record Sharing System For Exchange Students </a> - Solidity/Smart Contract/Quorum - Web </li>
+<br>
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/blob/master/CmpE483_Blockchain_Programming"> CmpE483 - Blockchain Programming </a></h3>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE483_Blockchain_Programming/project1"> Project1 </a> - Solidity/Smart Contract </li>
@@ -19,9 +20,6 @@ Projects i have made so far in university. Mostly, programming languages that i 
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE493_Intro_Information_Retrival/project1"> A Simple Document Retrieval System for Boolean Queries </a> - Python </li>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE493_Intro_Information_Retrival/project2"> Text Classification using Naive Bayes </a> - Python </li>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE493_Intro_Information_Retrival/project3"> Single Document Extractive Text Summarization with LexRank </a> - Python </li>
-<br>
-
-<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE492_SpecProjectInComputerEngineering/CmpE_492Project"> Blockchain Based Student Academic Record Sharing System For Exchange Students </a> - Solidity/Smart Contract/Quorum - Web </li>
 <br>
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE480_Intro_Artificial_Intelligence"> CmpE480 - Introduction to Artificial Intelligence </a></h3>
