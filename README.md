@@ -29,7 +29,7 @@ Projects i have made so far in university. Mostly, programming languages that i 
 <br>
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE443_Embedded_Systems_Design"> CmpE443 - Principles of Embedded Systems Design </a></h3>
-<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE443_Embedded_Systems_Design/Project"> Autonomous Car</a> - C / µVision </li>
+<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE443_Embedded_Systems_Design/Project"> Autonomous Car</a> - Assembly / C / µVision </li>
 <br>
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe300_Analysis_of_Algorithms"> CmpE300 - Analysis of Algorithms </a></h3>
