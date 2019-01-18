@@ -5,6 +5,7 @@ Projects i have made so far in university. Mostly, programming languages that i 
 
 <h3><a href = "https://github.com/bounswe/bounswe2017group11"> CmpE352 & CmpE451 - Project Development in Software Engineering </a><h3>
 <h3><a href = "https://github.com/bounIoT/SmartBulletinBoard"> CmpE490 - Internet of Things </a><h3>
+<h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE492_SpecProjectInComputerEngineering"> CmpE492 - Spec. Project in Computer Engineering </a><h3>
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/blob/master/CmpE483_Blockchain_Programming"> CmpE483 - Blockchain Programming </a></h3>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE483_Blockchain_Programming/project1"> Project1 </a> - Solidity/Smart Contract </li>
@@ -18,10 +19,19 @@ Projects i have made so far in university. Mostly, programming languages that i 
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE493_Intro_Information_Retrival/project3"> Single Document Extractive Text Summarization with LexRank </a> - Python </li>
 <br>
 
+<h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE480_Intro_Artificial_Intelligence"> CmpE480 - Introduction to Artificial Intelligence </a></h3>
+<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE480_Intro_Artificial_Intelligence/project1"> Implementing Search Algorithms </a> - Python </li>
+<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE480_Intro_Artificial_Intelligence/project2"> A Rule Based Bayesian Medical Expert </a> - Clips </li>
+<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE480_Intro_Artificial_Intelligence/project3"> Deep Neural Networks </a> - Python </li>
+<br>
+
 <h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe300_Analysis_of_Algorithms"> CmpE300 - Analysis of Algorithms </a></h3>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe300_Analysis_of_Algorithms/applicationProject"> Application Project</a> - C / MPI </li>
 <br>
 
+<h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE443_Embedded_Systems_Design"> CmpE443 - Principles of Embedded Systems Design </a></h3>
+<li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE443_Embedded_Systems_Design/Project"> Autonomous Car</a> - C / µVision </li>
+<br>
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe322_Operating_Systems"> Cmpe322 - Operating Systems </a></h3>
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/cmpe322_Operating_Systems/project1%20-%20OS%20Scheduler%20Implementation"> Project1 - Scheduler_Implementation</a> - C++ </li>
