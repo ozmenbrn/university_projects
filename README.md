@@ -7,6 +7,7 @@ Projects i have made so far in university. Mostly, programming languages that i 
 <h3><a href = "https://github.com/bounIoT/SmartBulletinBoard"> CmpE490 - Internet of Things </a><h3>
 
 <h3><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE492_SpecProjectInComputerEngineering"> CmpE492 - Spec. Project in Computer Engineering </a><h3>
+
 <li><a href = "https://github.com/ozmenbrn/university_projects/tree/master/CmpE492_SpecProjectInComputerEngineering/CmpE_492Project"> Blockchain Based Student Academic Record Sharing System For Exchange Students </a> - Solidity/Smart Contract/Quorum - Web </li>
 <br>
 
